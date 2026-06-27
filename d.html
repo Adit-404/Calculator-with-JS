@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+
+<section class="relative w-full min-h-screen flex justify-center items-center bg-radial from-slate-800 to-slate-950 p-4">
+
+    <!-- Calculator -->
+    <div class="w-full max-w-[380px] h-[510px] -translate-y-8 flex flex-col justify-between p-6 rounded-4xl shadow-2xl bg-slate-900 border border-slate-800 shadow-black/50">
+
+        <!-- Display -->
+        <div id="display"
+            class="w-full h-[90px] bg-slate-950 border border-slate-800 text-emerald-400 flex justify-end items-center pr-5 mt-2 text-[40px] rounded-2xl overflow-hidden font-mono shadow-inner tracking-wider">
+        </div>
+
+        <!-- Buttons -->
+        <div class="grid grid-cols-4 mt-6 w-full gap-3 text-xl font-medium">
+
+            <button id="sevenBtn" class="h-[62px] rounded-2xl bg-slate-800 text-slate-200 border-b-2 border-slate-950 shadow-md hover:bg-slate-700 active:scale-95 transition-all duration-100 cursor-pointer">7</button>
+            <button id="eightBtn" class="h-[62px] rounded-2xl bg-slate-800 text-slate-200 border-b-2 border-slate-950 shadow-md hover:bg-slate-700 active:scale-95 transition-all duration-100 cursor-pointer">8</button>
+            <button id="nineBtn" class="h-[62px] rounded-2xl bg-slate-800 text-slate-200 border-b-2 border-slate-950 shadow-md hover:bg-slate-700 active:scale-95 transition-all duration-100 cursor-pointer">9</button>
+            <button id="divideBtn" class="h-[62px] rounded-2xl bg-amber-500 text-slate-950 border-b-2 border-amber-700 shadow-md hover:bg-amber-400 active:scale-95 transition-all duration-100 cursor-pointer font-bold">÷</button>
+
+            <button id="fourBtn" class="h-[62px] rounded-2xl bg-slate-800 text-slate-200 border-b-2 border-slate-950 shadow-md hover:bg-slate-700 active:scale-95 transition-all duration-100 cursor-pointer">4</button>
+            <button id="fiveBtn" class="h-[62px] rounded-2xl bg-slate-800 text-slate-200 border-b-2 border-slate-950 shadow-md hover:bg-slate-700 active:scale-95 transition-all duration-100 cursor-pointer">5</button>
+            <button id="sixBtn" class="h-[62px] rounded-2xl bg-slate-800 text-slate-200 border-b-2 border-slate-950 shadow-md hover:bg-slate-700 active:scale-95 transition-all duration-100 cursor-pointer">6</button>
+            <button id="multiplyBtn" class="h-[62px] rounded-2xl bg-amber-500 text-slate-950 border-b-2 border-amber-700 shadow-md hover:bg-amber-400 active:scale-95 transition-all duration-100 cursor-pointer font-bold">×</button>
+
+            <button id="oneBtn" class="h-[62px] rounded-2xl bg-slate-800 text-slate-200 border-b-2 border-slate-950 shadow-md hover:bg-slate-700 active:scale-95 transition-all duration-100 cursor-pointer">1</button>
+            <button id="twoBtn" class="h-[62px] rounded-2xl bg-slate-800 text-slate-200 border-b-2 border-slate-950 shadow-md hover:bg-slate-700 active:scale-95 transition-all duration-100 cursor-pointer">2</button>
+            <button id="threeBtn" class="h-[62px] rounded-2xl bg-slate-800 text-slate-200 border-b-2 border-slate-950 shadow-md hover:bg-slate-700 active:scale-95 transition-all duration-100 cursor-pointer">3</button>
+            <button id="subBtn" class="h-[62px] rounded-2xl bg-amber-500 text-slate-950 border-b-2 border-amber-700 shadow-md hover:bg-amber-400 active:scale-95 transition-all duration-100 cursor-pointer font-bold">-</button>
+
+            <button id="clearBtn" class="h-[62px] rounded-2xl bg-rose-600 text-slate-950 border-b-2 border-rose-800 shadow-md hover:bg-rose-500 active:scale-95 transition-all duration-100 cursor-pointer font-bold text-lg">CLR</button>
+            <button id="zeroBtn" class="h-[62px] rounded-2xl bg-slate-800 text-slate-200 border-b-2 border-slate-950 shadow-md hover:bg-slate-700 active:scale-95 transition-all duration-100 cursor-pointer">0</button>
+            <button id="equalBtn" class="h-[62px] rounded-2xl bg-emerald-500 text-slate-950 border-b-2 border-emerald-700 shadow-md hover:bg-emerald-400 active:scale-95 transition-all duration-100 cursor-pointer font-bold">=</button>
+            <button id="addBtn" class="h-[62px] rounded-2xl bg-amber-500 text-slate-950 border-b-2 border-amber-700 shadow-md hover:bg-amber-400 active:scale-95 transition-all duration-100 cursor-pointer font-bold">+</button>
+
+        </div>
+    </div>
+
+    <!-- Credit -->
+    <div class="absolute bottom-6 left-1/2 -translate-x-1/2 text-center">
+        <p class="text-slate-500 text-xs tracking-[3px] uppercase">
+            Designed & Developed by
+        </p>
+        <h2 class="mt-1 text-lg font-bold bg-gradient-to-r from-emerald-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent uppercase">
+            Arafat Islam
+        </h2>
+    </div>
+
+</section>
+
+<script src="calculator.js"></script>
+</body>
+</html>
